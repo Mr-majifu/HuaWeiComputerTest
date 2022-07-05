@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>计算某字符出现次数</title>
 </head>
+
 <body>
   <script>
     /*
@@ -27,7 +29,22 @@
       2
     */
 
-    
+    let str = readline()
+    let key = readline()
+
+    function func(str, key) {
+      let num = 0
+      for (let i = 0; i < str.length; i++) {
+        if (str[i].toLowerCase() === key.toLowerCase()) {
+          num++
+        }
+      }
+      return num
+    }
+
+    console.log(func(str, key));
+
   </script>
 </body>
+
 </html>
